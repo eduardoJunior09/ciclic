@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciclic - Simulação</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/mobile-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="assets/img/logo.png" alt="logo" />
+    </nav>
+    <section id="container" class="container">
+      <header>
+        <div class="text">
+          <h2 class="title">Simulador</h2>
+          <p class="text-info">
+            Forneça as informações necessárias abaixo para realizar a simulação.
+          </p>
+        </div>
+      </header>
+      <main>
+        <div class="inputs">
+          <form>
+            <div class="div-input input-name">
+              <label>Nome</label>
+              <input id="input-name" type="text" placeholder="Ex.: Tobias" />
+              <span class="msg-erro" id="msg-name"
+                >Preencha o campo corretamente!</span
+              >
+            </div>
+
+            <div class="div-input input-monthly">
+              <label>Mensalidade</label>
+              <input
+                id="input-monthly"
+                type="number"
+                placeholder="Ex.: R$: 200,00"
+              />
+              <span class="msg-erro" id="msg-monthly"
+                >Valor mínimo de simulação é R$: 1,00!</span
+              >
+            </div>
+            <div class="input-time">
+              <label>Tempo:</label>
+              <select name="tempo" id="input-time">
+                <option value="12">1 ano</option>
+                <option value="24">2 anos</option>
+                <option value="36">3 anos</option>
+                <option value="48">4 anos</option>
+                <option value="60">5 anos</option>
+                <option value="120">10 anos</option>
+                <option value="240">20 anos</option>
+                <option value="360">30 anos</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="button-box">
+          <button id="button-simulation">SIMULAR</button>
+        </div>
+      </main>
+    </section>
+
+    <section id="container-simulation" class="container-simulation">
+      <header>
+        <div class="text">
+          <h2 class="title">Simulação</h2>
+        </div>
+      </header>
+      <span class="information">
+        Olá <span id="name" class="negrito">Tobias</span>, ao contribuir com
+        <span id="investment" class="negrito"> R$20,00</span> mensais, você terá
+        acumulado um total de
+        <span id="price" class="negrito"> R$509,65</span> em um período de
+        <span id="time" class="negrito">2</span> anos.
+      </span>
+      <div class="button-box">
+        <button id="button-new-simulation" class="button-new-simulation">SIMULAR NOVAMENTE</button>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>

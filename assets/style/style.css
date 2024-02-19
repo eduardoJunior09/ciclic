@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --color-desafio-ciclic-1-hex: #3e3e40;
+  --color-desafio-ciclic-2-hex: #30bfa5;
+  --color-desafio-ciclic-3-hex: #8af26d;
+  --color-desafio-ciclic-4-hex: #aef29b;
+  --color-desafio-ciclic-5-hex: #d9d9d9;
+  --color-desafio-ciclic-6-hex: #ffffff;
+  --color-desafio-ciclic-7-hex: #ff0000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 22%,
+    rgba(174, 242, 155, 1) 50%
+  );
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-desafio-ciclic-6-hex);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 8px;
+}
+
+nav img {
+  width: 35%;
+  max-width: 300px;
+}
+
+header,
+main {
+  width: 80%;
+  margin: 40px auto;
+  color: var(--color-desafio-ciclic-1-hex);
+}
+header {
+  text-align: center;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.title,
+label {
+  font-weight: bolder;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-input {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  padding: 2px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid var(--color-desafio-ciclic-1-hex);
+  background-color: transparent;
+  color: var(--color-desafio-ciclic-1-hex);
+  transition: border-color 0.5s ease-in-out;
+}
+
+input:focus {
+  border-color: var(--color-desafio-ciclic-2-hex);
+}
+
+.input-time {
+  margin: 20px 10px;
+}
+
+.input-time label {
+  margin-right: 10px;
+}
+
+.input-time select {
+  width: 80px;
+  height: 25px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--color-desafio-ciclic-1-hex);
+  background-color: transparent;
+  color: var(--color-desafio-ciclic-1-hex);
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.msg-erro {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-desafio-ciclic-7-hex);
+  display: none;
+}
+
+.container-simulation {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--color-desafio-ciclic-1-hex);
+  display: none;
+}
+
+.information {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.negrito {
+  font-weight: bolder;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--color-desafio-ciclic-1-hex);
+  color: var(--color-desafio-ciclic-6-hex);
+  transition: 0.5s ease-in-out;
+}
+
+.button-new-simulation {
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: var(--color-desafio-ciclic-2-hex);
+}

@@ -1,0 +1,8 @@
+@media (max-width: 425px) {
+  .container-simulation {
+    margin: 20px auto;
+  }
+  .information{
+    font-size: 20px;
+  }
+}
